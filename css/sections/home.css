@@ -33,15 +33,15 @@
 
 .content {
   position: relative;
-  top: -70%;
+  top: -65%;
   height: 60%;
 }
 
 .home img {
-  width: 200px;
-  height: auto;
+  width: 148px;
+  height: 148px;
   background-color: #e7e7ef;
-  /* padding: 5px; */
+  padding: 5px;
   margin-bottom: 10px;
 }
 
