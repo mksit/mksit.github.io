@@ -249,6 +249,10 @@ a.header-anchor code {
   color: #e83e8c;
 }
 
+.navbar-toggler {
+  display: none;
+}
+
 .content ul > ol,
 .content ol > ul,
 .content ul > ul,
