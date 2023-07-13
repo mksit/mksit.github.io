@@ -62,10 +62,6 @@
               </li>
               {%- endif %}
 
-              <!-- cv -->
-              <li class="nav-item {% if page.url contains 'cv' %}active{% endif %}">
-                <a class="nav-link" href="assets/pdf/cv.pdf">cv</a>
-              </li>
               
               <!-- Other pages -->
               {%- assign sorted_pages = site.pages | sort: "nav_order" -%}

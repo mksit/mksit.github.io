@@ -28,3 +28,5 @@ I am a PhD student at the University of Edinburgh, under the supervision of <a h
   <li>Large-Scale Reinforcement Learning</li>
   <li>Blockchain</li>
 </ul>
+
+<a href="assets/pdf/cv.pdf" class="btn btn-lg z-depth-0" role="button">CV</a>
