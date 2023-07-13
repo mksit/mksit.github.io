@@ -33,6 +33,16 @@ layout: default
               {{ page.profile.address }}
             </div>
             {%- endif %}
+            {%- if page.profile.email %}
+            <div class="email">
+             <b>email: {{ page.profile.email }}</b>
+            </div>
+            {%- endif %}
+            <div class="navbar-brand social">
+              <div class="contact-icons">
+                {% include social.html %}
+              </div>
+            </div>
           </div>
           {%- endif %}
 
@@ -54,7 +64,7 @@ layout: default
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
 
