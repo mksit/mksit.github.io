@@ -10,6 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   address:
   email: mankit.sit [at] ed.ac.uk
+  cv_pdf: cv.pdf
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
@@ -29,6 +30,6 @@ I am a PhD student at the University of Edinburgh, under the supervision of <a h
   <li>Blockchain</li>
 </ul>
 
-<div class="links">
-  <a href="assets/pdf/cv.pdf" class="btn btn-lg z-depth-0" role="button">CV</a>
+<div class="cv-link">
+  <a href="{{ page.profile.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" class="btn btn-lg" role="button">CV</a>
 </div>

@@ -169,7 +169,7 @@ blockquote {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
+  background-color: var(--global-theme-color);
   opacity: 0.95;
 }
 
@@ -207,7 +207,11 @@ blockquote {
   }
 
   .navbar-brand {
-    color: var(--global-text-color);
+    color: var(--global-nav-text-color);
+
+    span {
+      color: var(--global-nav-text-color);
+    }
   }
 
   .navbar-nav .nav-item .nav-link {
@@ -221,10 +225,10 @@ blockquote {
   .navbar-nav .nav-item.active>.nav-link {
     background-color: inherit;
     font-weight: bolder;
-    color: var(--global-theme-color);
+    color: var(--global-nav-text-color);
 
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-nav-hover-color);
     }
   }
 
@@ -292,10 +296,10 @@ blockquote {
   padding: 0;
   border: 0;
   background-color: inherit;
-  color: var(--global-text-color);
+  color: var(--global-nav-text-color);
 
   &:hover {
-    color: var(--global-hover-color);
+    color: var(--global-nav-hover-color);
   }
 }
 
@@ -793,15 +797,18 @@ html.transition *:after {
     }
   }
 
-  .links {
+  .cv-link {
     a.btn {
-      color: var(--global-text-color);
-      border: 1px solid var(--global-text-color);
+      background-color: var(--global-theme-color);
+      color: var(--global-nav-text-color);
+      border: 0px;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
       padding-left: 1rem;
       padding-right: 1rem;
       padding-top: 0.25rem;
       padding-bottom: 0.25rem;
       margin-left: 0;
+      margin-bottom: 1rem;
   
       &:hover {
         color: var(--global-theme-color);
